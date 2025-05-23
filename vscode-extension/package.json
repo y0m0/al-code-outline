@@ -380,6 +380,11 @@
 			},
 			{
 				"category": "AZ AL Dev Tools",
+				"command": "azALDevTools.LockEditorFieldCaptions",
+				"title": "Lock Table Field Captions in the Active Editor"
+			},
+			{
+				"category": "AZ AL Dev Tools",
 				"command": "azALDevTools.AddEditorPageFieldCaption",
 				"title": "Add Page Controls Captions to the Active Editor"
 			},
@@ -960,6 +965,10 @@
 				},
 				{
 					"command": "azALDevTools.LockEditorRemovedFieldCaptions",
+					"when": "editorLangId == al"
+				},
+				{
+					"command": "azALDevTools.LockEditorFieldCaptions",
 					"when": "editorLangId == al"
 				},
 				{

@@ -43,6 +43,7 @@ namespace AnZwDev.ALTools.WorkspaceCommands
             this.RegisterCommand(new AddDataClassificationWorkspaceCommand(this.ALDevToolsServer));
             this.RegisterCommand(new AddFieldCaptionsWorkspaceCommand(this.ALDevToolsServer));
             this.RegisterCommand(new LockRemovedFieldsCaptionsWorkspaceCommand(this.ALDevToolsServer));
+            this.RegisterCommand(new LockFieldsCaptionsWorkspaceCommand(this.ALDevToolsServer));
             this.RegisterCommand(new AddObjectCaptionsWorkspaceCommand(this.ALDevToolsServer));
             this.RegisterCommand(new MakeFlowFieldsReadOnlyWorkspaceCommand(this.ALDevToolsServer));
             this.RegisterCommand(new AddTableDataCaptionFieldsWorkspaceCommand(this.ALDevToolsServer));

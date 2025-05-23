@@ -26,6 +26,7 @@ import { ISyntaxModifierFactoriesCollection } from '../alsyntaxmodifiers/iSyntax
 import { BatchSyntaxModifier } from '../alsyntaxmodifiers/batchSyntaxModifier';
 import { WorkspaceCommandSyntaxModifier } from '../alsyntaxmodifiers/workspaceCommandSyntaxModifier';
 import { LockRemovedFieldsCaptionsModifier } from '../alsyntaxmodifiers/lockRemovedFieldsCaptionsModifier';
+import { LockFieldsCaptionsModifier } from '../alsyntaxmodifiers/lockFieldsCaptionsModifier';
 import { FormatDocumentModifier } from '../alsyntaxmodifiers/formatDocumentModifier';
 import { TrimTrailingWhitespaceModifier } from '../alsyntaxmodifiers/trimTrailingWhitespaceModifier';
 import { RemoveBeginEndModifier } from '../alsyntaxmodifiers/removeBeginEndModifier';
@@ -97,6 +98,10 @@ export class ALCodeTransformationService extends DevToolsExtensionService {
 
         this.registerModifierCommands('AddEnumValuesCaptions', 'azALDevTools.AddEditorEnumValuesCaption', 'azALDevTools.AddProjectEnumValuesCaption', () => new EnumCaptionsModifier(this._context));
         this.registerModifierCommands('LockRemovedFieldCaptions', 'azALDevTools.LockEditorRemovedFieldCaptions', 'azALDevTools.LockProjectRemovedFieldCaptions', () => new LockRemovedFieldsCaptionsModifier(this._context));
+        
+        //TODO
+        this.registerModifierCommands('LockFieldCaptions', 'azALDevTools.LockEditorFieldCaptions', 'azALDevTools.LockProjectFieldCaptions', () => new LockFieldsCaptionsModifier(this._context));
+        
         this.registerModifierCommands('AddPageFieldCaptions', 'azALDevTools.AddEditorPageFieldCaption', 'azALDevTools.AddProjectPageFieldCaption', () => new PageControlsCaptionsModifier(this._context));
         this.registerModifierCommands('AddObjectCaptions', 'azALDevTools.AddEditorObjectCaption', 'azALDevTools.AddProjectObjectCaption', () => new ObjectCaptionsModifier(this._context));
         this.registerModifierCommands('FixKeywordsCase', 'azALDevTools.FixEditorKeywordsCase', 'azALDevTools.FixProjectKeywordsCase', () => new FixKeywordsCaseModifier(this._context));
