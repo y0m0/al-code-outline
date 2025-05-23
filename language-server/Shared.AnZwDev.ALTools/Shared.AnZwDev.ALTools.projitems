@@ -235,6 +235,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\IdentifierNameComparer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\KeywordCaseSyntaxRewriter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\LockRemovedFieldsCaptionsSyntaxRewriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\LockFieldsCaptionsSyntaxRewriter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\ObjectCaptionSyntaxRewriter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\PageControlCaptionSyntaxRewriter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeTransformations\PermissionComparer.cs" />
@@ -359,6 +360,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\FormatDocumentWorkspaceCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\GenerateCSVXmlPortHeadersWorkspaceCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\LockRemovedFieldsCaptionsWorkspaceCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\LockFieldsCaptionsWorkspaceCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\MakeFlowFieldsReadOnlyWorkspaceCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\RefreshToolTipsWorkspaceCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WorkspaceCommands\RemoveBeginEndWorkspaceCommand.cs" />
